@@ -3,6 +3,7 @@ Feature: DataTable concept
 
     Background:
         Given Browser Launch
+    #changes 2    
     #changes
     #hashes()
     @hashes
