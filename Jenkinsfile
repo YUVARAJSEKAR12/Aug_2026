@@ -1,14 +1,9 @@
 pipeline {
     agent any
     parameters {
-        choice(
+        string(
             name: 'TAG',
-            choices: [
-                '@smoke',
-                '@regression',
-                '@login',
-                'all'
-            ],
+            defaultValue:'@smoke',
             description: 'Select Cucumber tag to execute'
         )
     }
